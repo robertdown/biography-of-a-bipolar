@@ -1,0 +1,28 @@
+---
+layout: page
+---
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <ul class="list-unstyled homepage">  
+          {% for post in site.posts %}
+            <li>
+              <div class="row">
+                <div class="col-sm-2">
+                  <div class="panel panel-default inline">
+                    <div class="panel-body text-center">
+                      {{ post.date | date: "%d" }}
+                    </div>
+                    <div class="panel-footer">
+                      {{ post.date | date: "%b %y" }}
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10">
+                  <h2 style="display:inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </h2>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+</div>

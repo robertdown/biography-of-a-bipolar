@@ -1,0 +1,29 @@
+# Site settings
+title: Biography of a Bipolar
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  I write about life with Type 1 Bipolar Disorder. Background in IT, pursuing 
+  my Bachelor of Science in Nursing and passionate about health informatics
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://biographyofabipolar.com" # the base hostname & protocol for your site
+twitter_username: robertjdown
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: "post"
+
+# Build settings
+markdown: kramdown
+
+# Pretty URL
+permalink: "posts/:title"
+
+# Custom categories
+categories: [navbar]
+
+sass:
+    style: :compressed

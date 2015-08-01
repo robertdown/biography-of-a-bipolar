@@ -1,0 +1,43 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>{{ site.title }}</h5>
+        <ul class="list-unstyled">
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-twitter"></i>&nbsp;{{ site.twitter_username }}
+            </a>
+          </li>
+          {% endif %}
+          <li>
+            <a href="mailto:{{ site.email }}">
+              <i class="fa fa-envelope"></i>&nbsp;{{ site.email }}</a>
+          </li>
+          <li>
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+              <i class="fa fa-rss"></i>&nbsp;RSS</a>
+            </a>
+          </li>
+        </ul>        
+      </div>
+
+      <div class="col-md-4">&nbsp;</div>
+
+      <div class="col-md-4">
+      </div>
+    </div>
+    {% if page.layout == "post" %}
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <p class="text-center">
+          <small>
+          Take all of this with a grain of salt, they are just my opinions and may not be right for your situation. I am not a physician or licensed counselor. This blog is not intended as, and is not, a substitute for professional medical advice. If you are having thoughts of suicide or self-harm, contact the National Suicide Prevention online or by phone at 1-800-273-8255.
+          </small>
+        </p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</footer>

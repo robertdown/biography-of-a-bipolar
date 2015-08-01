@@ -1,0 +1,67 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "bootstrap-custom-variables", // Custom variables must load before bootstrap.
+  "bootstrap",
+  "syntax-highlighting"
+;
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
+$twitter: #55ACEE;
+
+.post {
+    width: 516px;
+    margin:0px auto;
+    font-weight:300;
+}
+
+.highlight {
+    background-color: #fffa65;
+}
+
+.twitter {
+    background-color: rgba(255,255,255,0.3);
+    //background-color: $twitter;
+    //color: #fff !important;
+
+    &:hover {
+        background-color: darken($twitter, 10%) !important;
+    }
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: rgba(255,255,255,1) !important;
+    font-size:32px;
+}
+
+.date {
+    border: 1px solid #afafaf;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.site-header {
+    padding:0px;
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        right bottom,
+        color-stop(0, #18B1AC),
+        color-stop(1, #2863A2),
+        color-stop(1, #149B79),
+        color-stop(1, #5F2177)
+    );
+    background-image: -o-linear-gradient(right, #18B1AC 0%, #2863A2 100%, #149B79 100%, #5F2177 100%);
+    background-image: -moz-linear-gradient(right, #18B1AC 0%, #2863A2 100%, #149B79 100%, #5F2177 100%);
+    background-image: -webkit-linear-gradient(right, #18B1AC 0%, #2863A2 100%, #149B79 100%, #5F2177 100%);
+    background-image: -ms-linear-gradient(right, #18B1AC 0%, #2863A2 100%, #149B79 100%, #5F2177 100%);
+    background-image: linear-gradient(to right, #18B1AC 0%, #2863A2 100%, #149B79 100%, #5F2177 100%);
+}
