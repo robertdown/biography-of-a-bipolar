@@ -1,27 +1,23 @@
 REPO := $(shell git config --get remote.origin.url)
 GHPAGES = gh-pages
 
-all: clean $(GHPAGES) build commit
+all: build commit clean
 
 build:
-	cd $(GHPAGES) && \
-	jekyll build && \
-	\ls | grep -v "_site" | xargs git rm -fr && \
-	mv _site/* . && \
-	rm -fr "_site"
-
-$(GHPAGES):
-	git clone "$(REPO)" "$(GHPAGES)"
-	cd $(GHPAGES) && git checkout $(GHPAGES)
+	jekyll build
+	cd _site && \
+	git init && \
+	git remote add origin git@github.com:robertdown/biography-of-a-bipolar.git && \
+	git checkout --orphan $(GHPAGES)
 
 clean:
-	rm -rf $(GHPAGES)
+	rm -rf _site
 
 commit:
-	cd $(GHPAGES) && \
+	cd _site && \
 		git add . && \
 		git commit --edit --message="Publish @$$(date)"
-	cd $(GHPAGES) && \
+	cd _site && \
 		git push --set-upstream origin $(GHPAGES)
 
 .PHONY: clean commit
