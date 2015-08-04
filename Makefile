@@ -14,10 +14,11 @@ clean:
 	rm -rf _site
 
 commit:
+	echo "www.biographyofabipolar.com" > CNAME && git add CNAME
 	cd _site && \
 		git add . && \
-		git commit --edit --message="Publish @$$(date)"
+		git commit --no-gpg-sign --message="Publish @$$(date)"
 	cd _site && \
-		git push --set-upstream origin $(GHPAGES)
+		git push --force --set-upstream origin $(GHPAGES)
 
 .PHONY: clean commit
