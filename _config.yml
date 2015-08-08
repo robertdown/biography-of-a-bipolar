@@ -4,7 +4,7 @@ email: robertdown@live.com
 description: > # this means to ignore newlines until "baseurl:"
   I write about life with Type 1 Bipolar Disorder. Background in IT, pursuing 
   my Bachelor of Science in Nursing and passionate about health informatics
-baseurl: "/biography-of-a-bipolar/" # the subpath of your site, e.g. /blog/
+baseurl: # the subpath of your site, e.g. /blog/
 url: "http://robertdown.github.io" # the base hostname & protocol for your site
 twitter_username: robertjdown
 
