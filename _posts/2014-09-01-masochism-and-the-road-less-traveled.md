@@ -1,11 +1,11 @@
 ---
-title: Masochism and the Road Less Traveled
+excerpt: The path of least resistance. What an interesting thing. Water, electricity, basically everything takes it… so why can't I?
 ---
 
 The path of least resistance. What an interesting thing. Water, electricity, basically everything takes it… so why can’t I?
 
-From Merriam-Webster:  
- **Masochism** – *enjoyment of pain : pleasure*  
+From Merriam-Webster:
+ **Masochism** -- *enjoyment of pain : pleasure*
  *that someone gets from being abused or hurt.*
 
 Being diagnosed with Bipolar Disorder has been an interesting ride. Some days I feel like I can manage it better than others (I guess that’s part of the gig, right?). It definitely forced me to reconsider my career choice. I had struggled for years in determining what I wanted to do. I often bounced between being a nurse and working in the IT field. I even considered working in the healthcare IT field, but eventually came to the conclusion that I wanted to be solely in the medical field. As I was working through my pre-nursing classes I had the opportunity to travel to Brazil and spend a week traveling down the Rio Negro on a hospital boat aiding and learning from two surgeons and some nurses in treating various remote villages. It was a life changing experience in so many ways. I knew I didn’t just want to be a nurse, I wanted to be a doctor. But as my history has proven, I was a little indecisive. I continued my pre-nursing classes and when the time came to apply to nursing school I was not accepted (The school I was applying to had a very backwards admissions criteria – on paper I was a solid candidate. It was **very** backwards). But I took not being accepted as a definitive sign that medical school was where I was supposed to be.

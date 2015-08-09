@@ -20,8 +20,9 @@ $twitter: #55ACEE;
     font-weight:300;
 }
 
-.highlight {
+mark {
     background-color: #fffa65;
+    display: inline;
 }
 
 .twitter {
@@ -120,5 +121,27 @@ h2, h3, h4, h5, h6 {
 }
 
 article {
-    font-family: 'Lora';
+    font-family: $font-family-serif;
+}
+
+.homepage .lead {
+    padding-top:10px;
+}
+
+blockquote {
+    border-left: none;
+    border-bottom: 1px solid lighten($gray-light, 20%);
+    border-top: 1px solid lighten($gray-light, 20%);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    p {
+        font-family: $font-family-sans-serif;
+        font-style: italic;
+        font-size: 80%;
+        color: $gray-light;
+        padding: 0px;
+    }
 }

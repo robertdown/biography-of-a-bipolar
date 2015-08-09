@@ -1,5 +1,6 @@
 ---
 title: When Your Significant Other<br>Has Bipolar Disorder
+excerpt: I was recently asked a question on Twitter about being in a romantic relationship with someone diagnosed with Bipolar Disorder
 ---
 
 I was recently asked a question on Twitter about being in a romantic relationship with someone diagnosed with Bipolar Disorder. Below is the original question and my response.

@@ -8,13 +8,20 @@
     <header>
       <div class="page-header text-center">
         <h1>{{ page.title }}</h1>
-        <small>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small>
+        <small>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %} • Read in {{ page.content | reading_time }} {% if page.meta %} • {{ page.meta }}{% endif %}</small>
       </div>
     </header>
     <article class="post">
+      {% if page.excerpt %}<p class="lead">{{ page.excerpt }}</p>{% endif %}
       {{ content }}
     </article>
     <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_email_large' displayText='Email'></span>
+        <span class='st_delicious_large' displayText='Delicious'></span>
+      </div>
       <div class="col-md-6 col-md-offset-3">
         <div id="disqus_thread"></div>
           <script type="text/javascript">
