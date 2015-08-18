@@ -11,7 +11,7 @@
           <div class="col-sm-6">
             {% for post in site.posts limit:1 %}
                 <h2 class="text-right">
-                  <a href="{{ post.url | prepend: site.baseurl }}" style="display:inline-block;">{{ post.title }}</a>
+                  <a href="{{ post.url | prepend: site.baseurl }}" style="display:block;">{{ post.title }}</a>
                   <small>{{ post.date | date: "%A %B %-d" }}{{ post.date | ordinal }} {{ post.date | date: ", %Y" }}</small>
                 </h2>
             {% endfor %}
